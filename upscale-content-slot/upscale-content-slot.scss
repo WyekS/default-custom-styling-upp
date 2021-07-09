@@ -35,19 +35,19 @@
 
 .upscale-mobile :host {
 	.configuration {
-		padding: $medium-spacer-mobile;
+		padding: 0;
 	}
 }
 
 .upscale-tablet :host {
 	.configuration {
-		padding: $medium-spacer-tablet;
+		padding: 0;
 	}
 }
 
 .upscale-desktop :host {
 	.configuration {
-		padding: $medium-spacer-desktop;
+		padding: 0;
 	}
 }
 
