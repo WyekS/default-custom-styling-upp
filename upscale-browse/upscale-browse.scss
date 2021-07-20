@@ -45,6 +45,12 @@
 		display: block;
 	}
 
+    upscale-product-tile {
+        .name {
+            background-color: aqua;
+        }
+    }
+
 	.search {
 		margin: 24px 6px;
 		&__text {
@@ -188,6 +194,9 @@
 				@include small-font-size;
 				margin-left: 2.5%;
 			}
+            .name {
+                background-color: red;
+            }
 		}
 	}
 }
