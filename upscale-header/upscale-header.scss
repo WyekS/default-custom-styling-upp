@@ -2,10 +2,20 @@
 :host {
   // AV change
   background: #ffffff;
+
+  .header {
+    &__hamburger {
+      background-color: #282d32 !important;
+    }
+  }
 }
 
-.header {
-  &__hamburger {
-    background-color: transparent !important;
+@media (max-width: 1199px) {
+  :host {
+    .header__top {
+      &-navbar {
+          display: none;
+      }
+    }
   }
 }
