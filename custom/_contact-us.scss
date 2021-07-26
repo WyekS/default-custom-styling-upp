@@ -1,12 +1,13 @@
 upscale-template[data-name="Contact Us"] {
   upscale-attribute-set[ng-reflect-headline="Contact Us"] {
-    width: 460px;
+    width: 650px;
     height: auto;
     margin: 25px auto;
     border-radius: 10px;
     padding-top: 30px;
     padding-bottom: 20px;
     padding-left: 30px;
+    padding-right: 30px;
   }
 
   .resizable-input-limit {
@@ -30,5 +31,9 @@ upscale-template[data-name="Contact Us"] {
   .section__button {
     width: auto !important;
     padding: 10px !important;
+  }
+
+  .attribute-sets-headline {
+    font-family: "Nunito", sans-serif !important;
   }
 }

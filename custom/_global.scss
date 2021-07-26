@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap");
 html * {
-  font-family: "Nunito", sans-serif !important;
+  font-family: "Nunito", sans-serif;
 }
 
 body {
@@ -19,14 +19,13 @@ upscale-browse {
 
 textarea {
   background-color: transparent;
-  width: 405px;
   border-radius: 5px !important;
   border-style: solid !important;
   border-width: 1px !important;
   border-color: #000 !important;
-  margin-top: 10px;
+  margin-top: 10px !important;
   padding-left: 10px !important;
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
   padding-top: 8px !important;
 }
 
