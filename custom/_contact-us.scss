@@ -19,6 +19,23 @@ upscale-template[data-name="Contact Us"] {
     float: center;
   }
 
+  input {
+    background-color: transparent;
+    border-radius: 5px !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-color: #000 !important;
+    margin-top: 10px !important;
+    padding-left: 10px !important;
+    margin-bottom: 20px !important;
+    padding-top: 8px !important;
+  }
+
+  input:focus {
+    outline: 0;
+    border: 1px solid #282d32;
+  }
+
   textarea:focus {
     outline: 0;
     border: 1px solid #282d32;
