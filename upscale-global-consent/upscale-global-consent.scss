@@ -1,0 +1,16 @@
+@import '~styles/helpers/_module';
+
+$background-color: gray;
+$text-color: black;
+
+:host:not(.showSettings) {
+	opacity: 0.9;
+	border-radius: 25px;
+}
+
+:host.showSettings {
+	opacity: 0.9;
+	border-radius: 25px;
+}
+
+
