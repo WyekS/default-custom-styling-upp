@@ -1,5 +1,5 @@
 $background-color: white;
-$text-color: rgba(235,128,50,1);
+$text-color: #276955;
 
 :host:not(.showSettings) {
 	display: block;
@@ -31,7 +31,7 @@ $text-color: rgba(235,128,50,1);
 		transition-duration: 0.4s;
 	}
 	button:hover {
-		background-color: rgba(235,128,50,1);
+		background-color: #276955;
 		color: white;
 	}
 }
