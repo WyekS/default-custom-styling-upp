@@ -1,11 +1,112 @@
+@import '~styles/helpers/_module';
+
+$background-color: white;
+$text-color: rgba(235,128,50,1);
+
 :host:not(.showSettings) {
-	opacity: 0.9;
-	border-radius: 25px;
+	display: block;
+	background: $background-color;
+	padding: 5px;
+	width: 85vw;
+	max-width: 750px;
+	max-height: 90vh;
+	border-radius: 4px !important;
+	.content {
+		box-sizing: border-box;
+		@include small-font-size;
+		max-width: 530px;
+		margin: auto;
+		color: $text-color;
+		padding: 15px;
+	}
+	button {
+		@include clickable;
+
+		border-radius: 0;
+		border: 1px solid $text-color;
+		color: $text-color;
+		background: $background-color;
+		width: 100%;
+		line-height: 28px;
+		padding: 0;
+		@include small-font-size;
+		transition-duration: 0.4s;
+	}
+	button:hover {
+		background-color: rgba(235,128,50,1);
+		color: white;
+	}
 }
 
 :host.showSettings {
-	opacity: 0.9;
-	border-radius: 25px;
+	display: block;
+	background: $white;
+	padding: 5px;
+	width: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 4px !important;
+	.content {
+		box-sizing: border-box;
+		@include base-font-size;
+		width: 100%;
+		max-width: 100%;
+		margin: auto;
+		color: $black;
+		padding: 15px;
+	}
+	button {
+		@include button;
+		@include medium-font-size;
+		min-width: 155px;
+		height: 50px;
+		padding: 0 15px;
+	}
+	.accept {
+		margin-right: 20px;
+		color: $white;
+		border-radius: 2px;
+		background-color: $black;
+	}
+	.settings {
+		color: $black;
+		border-radius: 2px;
+		border: solid 2px $black;
+		background-color: $white;
+		&:hover {
+			background-color: darken($white, 10%);
+		}
+	}
 }
 
+.actions {
+	display: flex;
+	justify-content: stretch;
+}
 
+.upscale-extra-small,
+.upscale-medium,
+.upscale-small {
+	.consent-overlay-panel-class {
+		:host {
+			.actions {
+				display: flex;
+				justify-content: flex-start;
+			}
+		}
+	}
+}
+
+.upscale-large,
+.upscale-extra-large {
+	.consent-overlay-panel-class {
+		:host {
+			.actions {
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+}
+
+@import "~upscale-style-default/upscale-global-consent/upscale-global-consent.scss";
