@@ -40,3 +40,51 @@ textarea {
 .coop-spacer {
   min-height: 350px;
 }
+
+// ## Corporative colors ##
+
+// Button when the cart is clean
+.cart-empty__start-shopping-button {
+  background-color: #e8b331 !important;
+  color: #000 !important;
+}
+
+// Checkout buttons and radio-buttons
+.checkout-forms button {
+  background-color: #e8b331 !important;
+  color: #000 !important;
+}
+
+.shipping__radio-button::after {
+  background-color: #e8b331 !important;
+}
+
+// Mini Cart button
+.shopping-cart-icon__badge {
+  background-color: #e8b331 !important;
+  
+  .shopping-cart-icon__badge-count {
+    color: #000 !important;
+  }
+}
+
+// Ship to me / Free in-store pickup radio-buttons
+.mat-radio-outer-circle {
+  border-color: #e8b331 !important;
+}
+.mat-radio-inner-circle {
+  background-color: #e8b331 !important;
+}
+
+// Order confirmation page
+.shopping-button {
+  background-color: #e8b331 !important;
+  color: #000 !important;
+}
+
+// Next sell
+.carousel-container .text-button {
+  background-color: #e8b331 !important;
+  color: #000 !important;
+  border: none !important;
+}
