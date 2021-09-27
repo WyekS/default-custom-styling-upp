@@ -1,6 +1,70 @@
 upscale-template[data-name="Contact Us"] {
+
+  @font-face {
+    font-family: "Ionicons";
+    src: url("https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.0");
+    src: url("https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.0#iefix")
+      format("embedded-opentype"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/fonts/ionicons.ttf?v=2.0.0")
+      format("truetype"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/fonts/ionicons.woff?v=2.0.0")
+      format("woff"),
+    url("https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/fonts/ionicons.svg?v=2.0.0#Ionicons")
+      format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .ion-ios-location:before {
+    content: "\f456";
+  }
+
+  .ion-android-call:before {
+    content: "\f2d2";
+  }
+
+  .ion-android-mail:before {
+    content: "\f2eb";
+  }
+
+  .bs-row-contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .bs-col-contact {
+    max-width: 33.33%;
+    flex-grow: 1;
+
+    @media (max-width: 460px) {
+      max-width: 100%;
+    }
+  }
+
+  .icon-contact {
+    font-size: 5rem;
+    display: inline-block;
+    font-family: Ionicons;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .contact-section {
+      padding: 50px;
+      text-align: center;
+      background-color: #e8b331;
+      color: black;
+  }
+
   upscale-attribute-set {
-    width: 650px;
+    width: 80%;
     height: auto;
     margin: 25px auto;
     border-radius: 10px;
@@ -8,6 +72,24 @@ upscale-template[data-name="Contact Us"] {
     padding-bottom: 20px;
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .body-content {
+    flex-wrap: wrap;
+    flex-direction: row !important;
+  }
+
+  .attribute {
+    flex-grow: 1;
+    width: 50%;
+
+    @media (max-width: 890px) {
+      width: 100%;
+    }
+
+    > div {
+      padding: 10px;
+    }
   }
 
   .resizable-input-limit {
@@ -50,9 +132,41 @@ upscale-template[data-name="Contact Us"] {
     color: #000 !important;
     width: auto !important;
     padding: 10px !important;
+    margin-left: 10px;
+  }
+
+  .action-button {
+    display: none !important;
   }
 
   .attribute-sets-headline {
     font-family: "Nunito", sans-serif !important;
+  }
+
+  // Bottom Section
+  .accreditation {
+    width: 100%;
+  }
+
+  .accreditation ul li {
+    display: inline-block;
+    vertical-align: middle;
+    float: none !important;
+    margin: 0 -2px;
+    width: 8.33%;
+    text-align: center;
+    outline: none;
+
+    @media (max-width: 890px) {
+      width: 50%;
+    }
+    @media (max-width: 460px) {
+      width: 100%;
+    }
+  }
+
+  .accreditation img {
+      max-width: 100%;
+      height: auto;
   }
 }
